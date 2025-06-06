@@ -127,7 +127,7 @@ module "amplify" {
 
 module "athena" {
   source        = "../../modules/athena"
-  database_name = "my-athena-db-dev"
+  database_name = "my_athena_db_dev"
   bucket        = module.web_ui_bucket.bucket_arn # Use a dedicated bucket in production
 }
 
