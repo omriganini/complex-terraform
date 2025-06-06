@@ -8,7 +8,3 @@ resource "aws_iam_role_policy_attachment" "this" {
   role       = aws_iam_role.this.name
   policy_arn = var.policy_arns[count.index]
 }
-
-output "role_arn" {
-  value = aws_iam_role.this.arn
-} 

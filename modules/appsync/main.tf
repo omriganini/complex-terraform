@@ -7,7 +7,3 @@ resource "aws_appsync_graphql_api" "this" {
     default_action = "ALLOW"
   }
 }
-
-output "api_id" {
-  value = aws_appsync_graphql_api.this.id
-} 

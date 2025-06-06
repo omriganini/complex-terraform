@@ -8,7 +8,3 @@ resource "aws_cur_report_definition" "this" {
   s3_region   = var.s3_region
   s3_prefix   = var.s3_prefix
 }
-
-output "report_name" {
-  value = aws_cur_report_definition.this.report_name
-} 

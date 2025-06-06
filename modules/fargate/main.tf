@@ -11,7 +11,3 @@ resource "aws_ecs_service" "this" {
   }
   # Add load balancer, etc. as needed
 }
-
-output "service_name" {
-  value = aws_ecs_service.this.name
-} 

@@ -6,7 +6,3 @@ resource "aws_lambda_function" "this" {
   filename      = var.filename
   # Add environment, VPC config, etc. as needed
 }
-
-output "function_arn" {
-  value = aws_lambda_function.this.arn
-} 

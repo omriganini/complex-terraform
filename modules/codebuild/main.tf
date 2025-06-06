@@ -16,7 +16,3 @@ resource "aws_codebuild_project" "this" {
   }
   # Add more config as needed
 }
-
-output "project_arn" {
-  value = aws_codebuild_project.this.arn
-} 
